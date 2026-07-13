@@ -33,7 +33,7 @@
       <section>
         <h2>填写前请准备好</h2>
         <p class="note">学号、姓名、性别、年龄、身高、体重、手机号码，以及需要补充的备注。</p>
-        <!-- 把下面 #google-form-link 替换为 Google 表单“发送”中复制的公开链接。 -->
+        <!-- 这里会跳转到腾讯文档收集表。 -->
         <a id="formLink" class="button" href="#google-form-link" target="_blank" rel="noopener">开始填写</a>
         <p class="privacy">请勿代填他人信息。提交后如需修改，请联系老师。</p>
       </section>
@@ -41,9 +41,9 @@
     <footer>学生信息登记 · 请使用手机浏览器打开</footer>
   </main>
   <script>
-    // 收到 Google 表单链接后，把它粘贴到引号中即可。
-    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdpAr7LI1avtfaz-v5clHJMuPCTLhKovCjsFt2XTgF3S7Lkeg/viewform';
-    if (googleFormUrl) document.getElementById('formLink').href = googleFormUrl;
+    // 腾讯文档收集表的公开填写链接。
+    const formUrl = 'https://docs.qq.com/form/page/DTlZOTFN4a1JQQVlN';
+    if (formUrl) document.getElementById('formLink').href = formUrl;
   </script>
 </body>
 </html>
